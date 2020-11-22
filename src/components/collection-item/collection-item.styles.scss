@@ -1,11 +1,11 @@
 .collection-item {
   //  @media (min-width: 690px){
-    width:22%;
+    width:100%;
  //   }
-  display: flex;
-  flex-direction: column;
+  //display: flex;
+  //flex-direction: column;
   height: 350px;
-  align-items: center;
+  align-items: center;margin-bottom:40px;
 
 
   .image {
@@ -13,8 +13,7 @@
     height: 95%;
     background-size: cover;
     background-position: center;
-    margin-bottom: 5px;
-
+    margin-bottom: 10px;
   }
 
   .collection-footer {
@@ -23,6 +22,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 18px;
+    margin-bottom:100px;
 
     .name {
       width: 90%;
