@@ -17,7 +17,7 @@ export const createUserProfileDocument = async (userAuth, additionalData ) => {
   if (!userAuth) return;
 
   //console.log('testing');
- // console.log(firestore.doc('users/128yutyghg'));
+    console.log(firestore.doc('users/128yutyghg'));
   //console.log("testing2");
   
 }
