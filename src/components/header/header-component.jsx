@@ -2,6 +2,7 @@ import React from 'react';
 import { Nav, Navbar} from 'react-bootstrap';
 import './header-styles.scss';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 import { ReactComponent as Logo } from '../../assets/logo-4.svg';
 import { auth } from '../../firebase/firebase-utils';
 import toggleicon from '../../assets/arlogo.png';
@@ -47,4 +48,8 @@ const Header = ({ currentUser }) => (
    </div> 
 );
 
-export default Header;
+const mapStateToProps = state => ({
+    currentUser: state.user.currentUser
+})
+
+export default connect(mapStateToProps)(Header);
