@@ -6,6 +6,9 @@ import { connect } from 'react-redux';
 import { ReactComponent as Logo } from '../../assets/logo-4.svg';
 import { auth } from '../../firebase/firebase-utils';
 import toggleicon from '../../assets/arlogo.png';
+import CartIcon from '../cart-icon/cart-icon.component';
+import CartDropdown from '../cart-dropdown/cart-dropdown.component';
+import cartReducer from '../../redux/cart/cart.reducer';
 
 import styled from 'styled-components';
 
@@ -24,7 +27,7 @@ const Styles = styled.div`
     }
 `;
 
-const Header = ({ currentUser }) => (
+const Header = ({ currentUser, hidden }) => (
     <div className='testit'>
         <Styles>
             <Navbar expand='lg' variant='light'>
@@ -41,15 +44,21 @@ const Header = ({ currentUser }) => (
                             : 
                                 <Nav.Item><Nav.Link className='option' href ='/signin'>Sign In</Nav.Link></Nav.Item>        
                         }
+                       <Nav.Item><CartIcon /></Nav.Item>
+                      
                     </Nav>
+                    {
+                        hidden ? null : <CartDropdown />
+                    }
                 </Navbar.Collapse>
             </Navbar>
         </Styles>
    </div> 
 );
 
-const mapStateToProps = state => ({
-    currentUser: state.user.currentUser
-})
+const mapStateToProps = ({user: { currentUser }, cart: { hidden }}) => ({
+    currentUser,
+    hidden
+});
 
 export default connect(mapStateToProps)(Header);
