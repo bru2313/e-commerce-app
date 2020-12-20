@@ -2,26 +2,26 @@
 
 const SECTIONS_DATA = [
     {
-        title: 'hats',
+        title: 'cards',
         // imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
         imageUrl: 'images/hats.png', // local file in public/images/
         id: 1,
-        linkUrl: 'shop/hats'
+        linkUrl: 'shop/cards'
 
     },
     {
-        title: 'jackets',
+        title: 'prints',
         // imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
         imageUrl: 'images/jackets.png', // local file in public/images/
         id: 2,
-        linkUrl: 'shop/jackets'
+        linkUrl: 'shop/prints'
     },
     {
-        title: 'sneakers',
+        title: 'postcards',
         // imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
         imageUrl: 'images/sneakers.png', // local file in public/images/
         id: 3,
-        linkUrl: 'shop/sneakers'
+        linkUrl: 'shop/postcards'
     },
     {
         title: 'womens',
