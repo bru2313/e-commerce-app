@@ -1,14 +1,25 @@
 .sign-up {
   //  display: flex;
    // flex-direction: column;
-   @media (max-width:600px) {
-    width:100%
+   //@media (max-width:600px) {
+    //@error:100%
+  //@extend}
+
+  //@media (max-width: 500px) {
+ //   min-width:100%;
+ // }
+ @media (max-width: 800px) {
+  width:80%;
 }
-    width: 380px;
+  width: 48%;
+  display:flex;
+  flex-direction: column;
+  //flex: 1 1 auto;
+    //width: 380px;
     margin-top: 5em;
   
     .title {
       margin: 10px 0;
     }
-  }
+}
   

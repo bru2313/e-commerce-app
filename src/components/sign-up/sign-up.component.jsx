@@ -58,7 +58,7 @@ class SignUp extends React.Component {
     render() {
         const { displayName, email, password, confirmPassword } = this.state;
         return(
-
+    
                 <div className = 'sign-up'>
                     <h2 className = 'title'>I do not have a account</h2>
                     <span>Sign up with your email and password</span>
@@ -98,7 +98,7 @@ class SignUp extends React.Component {
                     <CustomButton type='submit'>SIGN UP</CustomButton>
                     </form>
                 </div>
- 
+     
         )
     }
 }
