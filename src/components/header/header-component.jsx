@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { ReactComponent as Logo } from '../../assets/logo-4.svg';
-import { auth } from '../../firebase/firebase-utils';
+import { auth } from '../../firebase/firebase.utils';
 import toggleicon from '../../assets/arlogo.png';
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
